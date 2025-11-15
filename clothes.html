@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clothes - NexShop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+    header {
+      background-color: #222;
+      padding: 10px 20px;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+     width: 100px;
+      height: 100px;
+      border-radius: 100%;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    nav ul li a:hover,
+    .active {
+      color: #ffcc00;
+    }
+     .video-section {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+    }
+
+    .video-section video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .video-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px 40px;
+      border-radius: 10px;
+    }
+
+    .video-text h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .video-text p {
+      font-size: 18px;
+      margin: 0;
+    }
+   
+    .products {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .product-grid {
+      
+      display: grid;
+      
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .product-card {
+    
+      background-color: white;
+      padding: 15px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .product-card img {
+      height: 220px;
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .product-card h3 {
+      margin: 10px 0 5px;
+    }
+    .product-card p {
+      color: #444;
+      font-weight: bold;
+      margin: 5px 0;
+    }
+    .btn {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #ffcc00;
+      color: #222;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background-color: #e6b800;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    @media (min-width: 1025px) {
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .video-text h1 {
+        font-size: 24px;
+      }
+
+      .video-text p {
+        font-size: 14px;
+      }
+
+  footer {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+
+      
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="main.jpg" alt="NexShop Logo" class="logo" />
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+   <section class="video-section">
+    <video autoplay muted loop>
+      <source src="clothes.mp4" type="video/mp4">
+    
+    </video>
+    <div class="video-text">
+      <h1>Clothing Collection</h1>
+    <p>Trendy and comfortable outfits for every occasion</p>
+  
+     
+    </div>
+  </section>
+
+
+  
+  <section class="products">
+    <h2>Our Clothes</h2>
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="c0.jpg" alt="T-Shirt" />
+        <h3>Casual T-Shirt</h3>
+        <p>$25.00</p>
+        <a href="order.html" class="btn">Shop Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="c1.jpg" alt="Jeans" />
+        <h3>Formal outfit</h3>
+        <p>$40.00</p>
+        <a href="order.html" class="btn">Shop Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="c2.jpg" alt="Jacket" />
+        <h3>Casual</h3>
+        <p>$120.00</p>
+        <a href="order.html" class="btn">Shop Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="c3.jpg" alt="Dress" />
+        <h3>Casual</h3>
+        <p>$55.00</p>
+        <a href="order.html" class="btn">Shop Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="c4.jpg" alt="Dress" />
+        <h3>Casual</h3>
+        <p>$55.00</p>
+        <a href="order.html" class="btn">Shop Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="c5.jpg" alt="Dress" />
+        <h3>Casual </h3>
+        <p>$55.00</p>
+        <a href="order.html" class="btn">Shop Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="ccc.jpg" alt="Dress" />
+        <h3>Casual </h3>
+        <p>$55.00</p>
+        <a href="order.html" class="btn">Shop Now</a>
+      </div>
+
+
+      <div class="product-card">
+        <img src="c6.jpg" alt="Dress" />
+        <h3>Casual </h3>
+        <p>$55.00</p>
+        <a href="order.html" class="btn">Shop Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="c7.jpg" alt="Dress" />
+        <h3> Casual</h3>
+        <p>$55.00</p>
+        <a href="order.html" class="btn">Shop Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="c8.jpg" alt="Dress" />
+        <h3>Casual </h3>
+        <p>$55.00</p>
+        <a href="order.html" class="btn">Shop Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="c9.jpg" alt="Dress" />
+        <h3> Casual</h3>
+        <p>$55.00</p>
+        <a href="order.html" class="btn">Shop Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="c10.jpg" alt="Dress" />
+        <h3> Casual</h3>
+        <p>$55.00</p>
+        <a href="order.html" class="btn">Shop Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="c11.jpg" alt="Dress" />
+        <h3> Formal Outfit</h3>
+        <p>$55.00</p>
+        <a href="order.html" class="btn">Shop Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="c12.jpg" alt="Dress" />
+        <h3> Casual</h3>
+        <p>$55.00</p>
+        <a href="order.html" class="btn">Shop Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="c13.jpg" alt="Dress" />
+        <h3> Casual</h3>
+        <p>$55.00</p>
+        <a href="order.html" class="btn">Shop Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="c14.jpg" alt="Dress" />
+        <h3> Casual</h3>
+        <p>$55.00</p>
+        <a href="order.html" class="btn">Shop Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="c15.jpg" alt="Dress" />
+        <h3> Casual</h3>
+        <p>$55.00</p>
+        <a href="order.html" class="btn">Shop Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="c16.jpg" alt="Dress" />
+        <h3>  Formal Outfit</h3>
+        <p>$55.00</p>
+        <a href="order.html" class="btn">Shop Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="c17.jpg" alt="Dress" />
+        <h3> Casual</h3>
+        <p>$55.00</p>
+        <a href="order.html" class="btn">Shop Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="c18.jpg" alt="Dress" />
+        <h3> Casual</h3>
+        <p>$55.00</p>
+        <a href="order.html" class="btn">Shop Now</a>
+      </div>
+
+
+      <div class="product-card">
+        <img src="c19.jpg" alt="Dress" />
+        <h3>  Formal Outfit</h3>
+        <p>$55.00</p>
+        <a href="order.html" class="btn">Shop Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="c20.jpg" alt="Dress" />
+        <h3> Casual</h3>
+        <p>$55.00</p>
+        <a href="order.html" class="btn">Shop Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="c21.jpg" alt="Dress" />
+        <h3> Casual</h3>
+        <p>$55.00</p>
+        <a href="order.html" class="btn">Shop Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="c22.jpg" alt="Dress" />
+        <h3> Casual</h3>
+        <p>$55.00</p>
+        <a href="order.html" class="btn">Shop Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="c23.jpg" alt="Dress" />
+        <h3>  Formal Outfit</h3>
+        <p>$55.00</p>
+        <a href="order.html" class="btn">Shop Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="c24.jpg" alt="Dress" />
+        <h3> Casual</h3>
+        <p>$55.00</p>
+        <a href="order.html" class="btn">Shop Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="c25.jpg" alt="Dress" />
+        <h3> Casual</h3>
+        <p>$55.00</p>
+        <a href="order.html" class="btn">Shop Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="c26.jpg" alt="Dress" />
+        <h3> Casual</h3>
+        <p>$55.00</p>
+        <a href="order.html" class="btn">Shop Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="c27.jpg" alt="Dress" />
+        <h3> Casual</h3>
+        <p>$55.00</p>
+        <a href="order.html" class="btn">Shop Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="c28.jpg" alt="Dress" />
+        <h3>  Formal Outfit</h3>
+        <p>$55.00</p>
+        <a href="order.html" class="btn">Shop Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="c29.jpg" alt="Dress" />
+        <h3> Casual</h3>
+        <p>$55.00</p>
+        <a href="order.html" class="btn">Shop Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="c30.jpg" alt="Dress" />
+        <h3> Casual</h3>
+        <p>$55.00</p>
+        <a href="order.html" class="btn">Shop Now</a>
+      </div>
+
+      
+
+
+
+      
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 NexShop. All Rights Reserved.<br><br>
+              Designed by : Ahmed Ali</p>
+  </footer>
+</body>
+</html>
